@@ -13,7 +13,7 @@ export default function WebApi() {
 
 
   const createGraphics = useCallback(() => {
-    var msg = new window.SpeechSynthesisUtterance();
+    var msg = new SpeechSynthesisUtterance();
 
     msg.text = value;
     function speak() {
@@ -22,7 +22,7 @@ export default function WebApi() {
     speak();
     setIsSpeaking(true);
     setIsEnded(false);
-  }, []);
+  }, [value]);
 
   const Pause = useCallback(() => {
     function pause() {
