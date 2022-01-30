@@ -3,17 +3,17 @@ import { useCallback,useState } from "react";
 
 export const useSpeechSynthesisApi = () => {
     
-  const [text, setText] = useState("");
-  const [isSpeaking, setIsSpeaking] = useState(false);
-  const [isPaused, setIsPaused] = useState(false);
-  const [isResumed, setIsResumed] = useState(false);
-  const [isEnded, setIsEnded] = useState(false);
+  const [text, setText] = useState<string>("");
+  const [isSpeaking, setIsSpeaking] = useState<boolean>(false);
+  const [isPaused, setIsPaused] = useState<boolean>(false);
+  const [isResumed, setIsResumed] = useState<boolean>(false);
+  const [isEnded, setIsEnded] = useState<boolean>(false);
 
   
   const speak = useCallback(() => {
     var msg = new SpeechSynthesisUtterance();
 
-    msg.text = text;
+    msg.text = <string>text;
     function speak() {
       window.speechSynthesis.speak(msg);
     }
