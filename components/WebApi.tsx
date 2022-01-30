@@ -1,4 +1,4 @@
-import { useState, useCallback,useEffect } from "react";
+import { useState, useCallback } from "react";
 
 export default function WebApi() {
 
@@ -10,36 +10,6 @@ export default function WebApi() {
   const [isPaused, setIsPaused] = useState(false);
   const [isResumed, setIsResumed] = useState(false);
   const [isEnded, setIsEnded] = useState(false);
-  // const [voices, setVoices] = useState([]);
-
-  // const [supported, setSupported] = useState(false);
-
-  // const processVoices = (voiceOptions) => {
-  //   setVoices(voiceOptions);
-  // };
-
-  // const getVoices = () => {
-  //   // Firefox seems to have voices upfront and never calls the
-  //   // voiceschanged event
-  //   let voiceOptions = window.speechSynthesis.getVoices();
-  //   if (voiceOptions.length > 0) {
-  //     processVoices(voiceOptions);
-  //     return;
-  //   }
-
-  //   window.speechSynthesis.onvoiceschanged = (event) => {
-  //     voiceOptions = event.target.getVoices();
-  //     processVoices(voiceOptions);
-  //   };
-  // };
-
-
-  // useEffect(() => {
-  //   if (typeof window !== 'undefined' && window.speechSynthesis) {
-  //     setSupported(true);
-  //     getVoices();
-  //   }
-  // }, []);
 
 
   const createGraphics = useCallback(() => {

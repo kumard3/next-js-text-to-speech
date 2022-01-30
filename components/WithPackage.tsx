@@ -1,14 +1,12 @@
 import React, { useState } from "react";
 //@ts-ignore
 import { useSpeechSynthesis } from "./react-speech-kit";
-// import { textarea, button, layout } from "../styles/style";
 //@ts-ignore
 import { textarea, button, layout } from "../styles/style";
 
 
 export default function WithPackage() {
   const [value, setValue] = useState("");
-  const [speekvalue, setSpeekValue] = useState("");
   const { speak, cancel,pause } = useSpeechSynthesis();
 
 console.log(useSpeechSynthesis())

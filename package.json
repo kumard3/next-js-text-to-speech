@@ -20,9 +20,7 @@
   "dependencies": {
     "next": "12.0.7",
     "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-speech-kit": "^3.0.1",
-    "text-to-speech-js": "^1.1.10"
+    "react-dom": "17.0.2"
   },
   "devDependencies": {
     "@types/node": "17.0.4",

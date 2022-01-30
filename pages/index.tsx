@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/link-passhref */
-import WebApi from '../components/WebApi.jsx';
+import WebApi from '../components/WebApi';
 import WithPackage from '../components/WithPackage';
 
 export default function Home() {
