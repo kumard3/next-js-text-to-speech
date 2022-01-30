@@ -1,4 +1,4 @@
-import { useSpeechSynthesisApi } from "../hooks/useSpeechSynthesisApi";
+import { useSpeachSynthesisApi } from "../hooks/useSpeachSynthesisApi";
 
 export default function WebApi() {
   const {
@@ -12,7 +12,7 @@ export default function WebApi() {
     pause,
     resume,
     cancel,
-  } = useSpeechSynthesisApi();
+  } = useSpeachSynthesisApi();
 
   const textarea = `bg-gray-500 text-white rounded-3xl p-[14px] text-xl w-[360px] sm:w-[30rem] min-h-[20rem]`;
 
