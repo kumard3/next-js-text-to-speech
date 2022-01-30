@@ -1,7 +1,7 @@
 import { useState, useCallback } from "react";
 
 export default function WebApi() {
-  // console.log(layout)
+
   const [value, setValue] = useState(
     "Hey there! Cyphen, a community  with great passion and zest in building a healthy environment To learn •Open Source•Web Development•Data structures and Algorithms•Projects•Competitive Coding•ProgrammingMotivational talks, Opportunities, and much much more!Suggestions are always welcomed."
   );
@@ -71,11 +71,7 @@ export default function WebApi() {
         />
       </div>
       <div className="w-full flex justify-center items-center">
-        {/* {paused || pending === !true ? "Resume" : "Paused"} */}
-
-        {/* { window.speechSynthesis.paused === false ? `paused: true
-pending: false
-speaking: false` : ``} */}
+   
 
         <button onClick={createGraphics} className={`${button} mx-3 `}>
           Speak
