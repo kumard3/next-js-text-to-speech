@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 //@ts-ignore
-import { useSpeechSynthesis } from "react-speech-kit";
+import { useSpeechSynthesis } from "./react-speech-kit";
 // import { textarea, button, layout } from "../styles/style";
 //@ts-ignore
 import { textarea, button, layout } from "../styles/style";
@@ -9,9 +9,9 @@ import { textarea, button, layout } from "../styles/style";
 export default function WithPackage() {
   const [value, setValue] = useState("");
   const [speekvalue, setSpeekValue] = useState("");
-  const { speak, cancel } = useSpeechSynthesis();
+  const { speak, cancel,pause } = useSpeechSynthesis();
 
-
+console.log(useSpeechSynthesis())
   return (
     <div className={`${layout}`}>
       <div className="flex flex-col ">
@@ -39,6 +39,10 @@ export default function WithPackage() {
           <button className={`${button} `} onClick={() => cancel()}>
             {" "}
             Cancel
+          </button>       
+           <button className={`${button} `} onClick={() => pause()}>
+            {" "}
+            pause
           </button>
           {/* <button  onMouseDown={listen} onMouseUp={stop}>
           🎤
